@@ -40,24 +40,33 @@ export default {
 
 <style scoped>
 .chat-window {
-  background: #fafafa;
+  background: #24292b;
   padding: 30px 20px;
 }
 .single {
   margin: 18px 0;
+  background: rgba(90, 228, 203, 0.4);
+  padding: 18px 12px;
+  max-width: 400px;
+  border-radius: 10px;
 }
 .created-at {
   display: block;
-  color: #999;
+  color: #ccc;
   font-size: 12px;
   margin-bottom: 4px;
 }
 .name {
-  font-weight: bold;
+  font-weight: 900;
   margin-right: 6px;
+  color: #fff;
 }
 .messages {
   max-height: 400px;
   overflow: auto;
+  color: #eee;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
 }
 </style>

@@ -1,14 +1,15 @@
 body {
-  background: #e3e1ff;
+  background: rgb(212, 212, 212);
   color: #444;
 }
 .container {
   width: 90%;
-  max-width: 960px;
+  max-width: 560px;
   margin: 80px auto;
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 2px 4px 6px rgb(0 0 0 / 0.1);
-  background: #fff;
+  background: #2f3640;
+  /* border: 6px solid #ffffff; */
 }
 .error {
   color: #ff3f80;
@@ -23,4 +24,11 @@ button {
   border-radius: 20px;
   padding: 10px 20px;
   cursor: pointer;
+}
+.copyright {
+  font-size: 11px;
+  text-align: center;
+  display: block;
+  padding-bottom: 10px;
+  color: #999;
 }

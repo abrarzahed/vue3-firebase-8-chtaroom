@@ -1,8 +1,8 @@
 <template>
   <div class="welcome container">
-    <p>Welcome</p>
+    <p class="greetings">Welcome</p>
     <div v-if="showLogin">
-      <h2>Login to Chatroom</h2>
+      <h2>Login to <span class="chatroom-span">Chatroom</span></h2>
       <LoginForm @login="enterChat" />
       <p>
         No account yet?
@@ -10,7 +10,7 @@
       </p>
     </div>
     <div v-else>
-      <h2>Sign up to Chatroom</h2>
+      <h2>Sign up to <span class="chatroom-span">Chatroom</span></h2>
       <SignupForm @signup="enterChat" />
       <p>
         Already registered?
@@ -43,8 +43,14 @@ export default {
 .welcome {
   text-align: center;
   padding: 20px 0;
+  color: #ddd;
 }
 /* form styles */
+.greetings {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
 .welcome form {
   width: 300px;
   margin: 20px auto;
@@ -57,10 +63,11 @@ export default {
   width: 100%;
   padding: 10px;
   border-radius: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   outline: none;
   color: #999;
   margin: 10px auto;
+  background: #eee;
 }
 .welcome span {
   font-weight: bold;
@@ -70,5 +77,16 @@ export default {
 }
 .welcome button {
   margin: 20px auto;
+}
+span.chatroom-span {
+  background: #4bbda8;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px;
+  font-weight: 900;
+  display: inline-block;
+  transform: skew(-10deg);
+  cursor: inherit;
 }
 </style>

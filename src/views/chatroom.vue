@@ -3,6 +3,9 @@
     <Navbar />
     <ChatWindow />
     <NewChatForm />
+    <span class="copyright"
+      >Made for practice purpose || by Abrar Hussen Zahed</span
+    >
   </div>
 </template>
 

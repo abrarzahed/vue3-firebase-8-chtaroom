@@ -1,7 +1,7 @@
 <template>
   <nav v-if="user">
     <div>
-      <p>Hey {{ user.displayName }}</p>
+      <p style="font-weight: 900; color: #1abc9c">{{ user.displayName }}</p>
       <p class="email">{{ user.email }}</p>
     </div>
     <button @click="handleClick">Logout</button>
